@@ -16,7 +16,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler/transport"
 	"github.com/domonda/go-types/nullable"
 	"github.com/domonda/go-types/uu"
-	"github.com/enisdenjo/go-gqlhive/internal/fixtures/todos/graph"
+	"github.com/graphql-hive/go-gqlhive/internal/fixtures/todos/graph"
 	"github.com/gkampitakis/go-snaps/snaps"
 	"github.com/stretchr/testify/require"
 )

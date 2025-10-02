@@ -8,7 +8,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/enisdenjo/go-gqlhive/internal/fixtures/todos/graph/model"
+	"github.com/graphql-hive/go-gqlhive/internal/fixtures/todos/graph/model"
 )
 
 // CreateTodo is the resolver for the createTodo field.

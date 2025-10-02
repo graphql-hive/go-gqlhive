@@ -1,4 +1,4 @@
-# gqlhive [![Go Report Card](https://goreportcard.com/badge/github.com/enisdenjo/go-gqlhive)](https://goreportcard.com/report/github.com/enisdenjo/go-gqlhive) [![Go Reference](https://pkg.go.dev/badge/github.com/enisdenjo/go-gqlhive.svg)](https://pkg.go.dev/github.com/enisdenjo/go-gqlhive)
+# gqlhive [![Go Report Card](https://goreportcard.com/badge/github.com/graphql-hive/go-gqlhive)](https://goreportcard.com/report/github.com/graphql-hive/go-gqlhive) [![Go Reference](https://pkg.go.dev/badge/github.com/graphql-hive/go-gqlhive.svg)](https://pkg.go.dev/github.com/graphql-hive/go-gqlhive)
 
 Usage reporting to GraphQL Hive for [gqlgen](https://gqlgen.com/).
 
@@ -7,7 +7,7 @@ Usage reporting to GraphQL Hive for [gqlgen](https://gqlgen.com/).
 ### Install
 
 ```sh
-go get github.com/enisdenjo/go-gqlhive@v2
+go get github.com/graphql-hive/go-gqlhive@v2
 ```
 
 ### Set up usage reporting in Hive Console
@@ -29,7 +29,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/handler/transport"
 	"github.com/99designs/gqlgen/graphql/playground"
-	"github.com/enisdenjo/go-gqlhive"
+	"github.com/graphql-hive/go-gqlhive"
 )
 
 const defaultPort = "8080"
@@ -76,7 +76,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler/transport"
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/domonda/go-types/nullable"
-	"github.com/enisdenjo/go-gqlhive"
+	"github.com/graphql-hive/go-gqlhive"
 )
 
 const defaultPort = "8080"

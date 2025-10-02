@@ -1,4 +1,4 @@
-module github.com/enisdenjo/go-gqlhive
+module github.com/graphql-hive/go-gqlhive
 
 go 1.24.5
 
