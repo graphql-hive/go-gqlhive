@@ -316,7 +316,7 @@ func (ec *executionContext) field_Mutation_createTodo_argsInput(
 
 	ctx = graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
 	if tmp, ok := rawArgs["input"]; ok {
-		return ec.unmarshalNNewTodo2githubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐNewTodo(ctx, tmp)
+		return ec.unmarshalNNewTodo2githubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐNewTodo(ctx, tmp)
 	}
 
 	var zeroVal model.NewTodo
@@ -377,7 +377,7 @@ func (ec *executionContext) field_Query_todos_argsCondition(
 
 	ctx = graphql.WithPathContext(ctx, graphql.NewPathWithField("condition"))
 	if tmp, ok := rawArgs["condition"]; ok {
-		return ec.unmarshalOTodosCondition2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosCondition(ctx, tmp)
+		return ec.unmarshalOTodosCondition2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosCondition(ctx, tmp)
 	}
 
 	var zeroVal *model.TodosCondition
@@ -395,7 +395,7 @@ func (ec *executionContext) field_Query_todos_argsSortBy(
 
 	ctx = graphql.WithPathContext(ctx, graphql.NewPathWithField("sortBy"))
 	if tmp, ok := rawArgs["sortBy"]; ok {
-		return ec.unmarshalOTodosSortBy2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosSortBy(ctx, tmp)
+		return ec.unmarshalOTodosSortBy2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosSortBy(ctx, tmp)
 	}
 
 	var zeroVal *model.TodosSortBy
@@ -550,7 +550,7 @@ func (ec *executionContext) _Mutation_createTodo(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodo(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createTodo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -615,7 +615,7 @@ func (ec *executionContext) _Query_todos(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.([]*model.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚕᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodoᚄ(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚕᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodoᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_todos(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -943,7 +943,7 @@ func (ec *executionContext) _Todo_user(ctx context.Context, field graphql.Collec
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Todo_user(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1083,7 +1083,7 @@ func (ec *executionContext) _User_todos(ctx context.Context, field graphql.Colle
 	}
 	res := resTmp.([]*model.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚕᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodoᚄ(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚕᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodoᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_User_todos(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3117,21 +3117,21 @@ func (ec *executionContext) unmarshalInputTodosCondition(ctx context.Context, ob
 			it.SearchText = data
 		case "statuses":
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("statuses"))
-			data, err := ec.unmarshalOTodosConditionStatus2ᚕgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatusᚄ(ctx, v)
+			data, err := ec.unmarshalOTodosConditionStatus2ᚕgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatusᚄ(ctx, v)
 			if err != nil {
 				return it, err
 			}
 			it.Statuses = data
 		case "userStatus":
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("userStatus"))
-			data, err := ec.unmarshalOTodosConditionUserStatus2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUserStatus(ctx, v)
+			data, err := ec.unmarshalOTodosConditionUserStatus2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUserStatus(ctx, v)
 			if err != nil {
 				return it, err
 			}
 			it.UserStatus = data
 		case "user":
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("user"))
-			data, err := ec.unmarshalOTodosConditionUser2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUser(ctx, v)
+			data, err := ec.unmarshalOTodosConditionUser2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUser(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -3768,7 +3768,7 @@ func (ec *executionContext) marshalNID2string(ctx context.Context, sel ast.Selec
 	return res
 }
 
-func (ec *executionContext) unmarshalNNewTodo2githubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐNewTodo(ctx context.Context, v any) (model.NewTodo, error) {
+func (ec *executionContext) unmarshalNNewTodo2githubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐNewTodo(ctx context.Context, v any) (model.NewTodo, error) {
 	res, err := ec.unmarshalInputNewTodo(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -3789,11 +3789,11 @@ func (ec *executionContext) marshalNString2string(ctx context.Context, sel ast.S
 	return res
 }
 
-func (ec *executionContext) marshalNTodo2githubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodo(ctx context.Context, sel ast.SelectionSet, v model.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2githubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodo(ctx context.Context, sel ast.SelectionSet, v model.Todo) graphql.Marshaler {
 	return ec._Todo(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNTodo2ᚕᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodoᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2ᚕᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodoᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Todo) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -3817,7 +3817,7 @@ func (ec *executionContext) marshalNTodo2ᚕᚖgithubᚗcomᚋenisdenjoᚋgoᚑg
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNTodo2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodo(ctx, sel, v[i])
+			ret[i] = ec.marshalNTodo2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodo(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3837,7 +3837,7 @@ func (ec *executionContext) marshalNTodo2ᚕᚖgithubᚗcomᚋenisdenjoᚋgoᚑg
 	return ret
 }
 
-func (ec *executionContext) marshalNTodo2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodo(ctx context.Context, sel ast.SelectionSet, v *model.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodo(ctx context.Context, sel ast.SelectionSet, v *model.Todo) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -3847,17 +3847,17 @@ func (ec *executionContext) marshalNTodo2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlh
 	return ec._Todo(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNTodosConditionStatus2githubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatus(ctx context.Context, v any) (model.TodosConditionStatus, error) {
+func (ec *executionContext) unmarshalNTodosConditionStatus2githubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatus(ctx context.Context, v any) (model.TodosConditionStatus, error) {
 	var res model.TodosConditionStatus
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNTodosConditionStatus2githubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatus(ctx context.Context, sel ast.SelectionSet, v model.TodosConditionStatus) graphql.Marshaler {
+func (ec *executionContext) marshalNTodosConditionStatus2githubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatus(ctx context.Context, sel ast.SelectionSet, v model.TodosConditionStatus) graphql.Marshaler {
 	return v
 }
 
-func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -4168,7 +4168,7 @@ func (ec *executionContext) marshalOString2ᚖstring(ctx context.Context, sel as
 	return res
 }
 
-func (ec *executionContext) unmarshalOTodosCondition2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosCondition(ctx context.Context, v any) (*model.TodosCondition, error) {
+func (ec *executionContext) unmarshalOTodosCondition2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosCondition(ctx context.Context, v any) (*model.TodosCondition, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -4176,7 +4176,7 @@ func (ec *executionContext) unmarshalOTodosCondition2ᚖgithubᚗcomᚋenisdenjo
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalOTodosConditionStatus2ᚕgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatusᚄ(ctx context.Context, v any) ([]model.TodosConditionStatus, error) {
+func (ec *executionContext) unmarshalOTodosConditionStatus2ᚕgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatusᚄ(ctx context.Context, v any) ([]model.TodosConditionStatus, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -4186,7 +4186,7 @@ func (ec *executionContext) unmarshalOTodosConditionStatus2ᚕgithubᚗcomᚋeni
 	res := make([]model.TodosConditionStatus, len(vSlice))
 	for i := range vSlice {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithIndex(i))
-		res[i], err = ec.unmarshalNTodosConditionStatus2githubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatus(ctx, vSlice[i])
+		res[i], err = ec.unmarshalNTodosConditionStatus2githubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatus(ctx, vSlice[i])
 		if err != nil {
 			return nil, err
 		}
@@ -4194,7 +4194,7 @@ func (ec *executionContext) unmarshalOTodosConditionStatus2ᚕgithubᚗcomᚋeni
 	return res, nil
 }
 
-func (ec *executionContext) marshalOTodosConditionStatus2ᚕgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatusᚄ(ctx context.Context, sel ast.SelectionSet, v []model.TodosConditionStatus) graphql.Marshaler {
+func (ec *executionContext) marshalOTodosConditionStatus2ᚕgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatusᚄ(ctx context.Context, sel ast.SelectionSet, v []model.TodosConditionStatus) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -4221,7 +4221,7 @@ func (ec *executionContext) marshalOTodosConditionStatus2ᚕgithubᚗcomᚋenisd
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNTodosConditionStatus2githubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatus(ctx, sel, v[i])
+			ret[i] = ec.marshalNTodosConditionStatus2githubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionStatus(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -4241,7 +4241,7 @@ func (ec *executionContext) marshalOTodosConditionStatus2ᚕgithubᚗcomᚋenisd
 	return ret
 }
 
-func (ec *executionContext) unmarshalOTodosConditionUser2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUser(ctx context.Context, v any) (*model.TodosConditionUser, error) {
+func (ec *executionContext) unmarshalOTodosConditionUser2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUser(ctx context.Context, v any) (*model.TodosConditionUser, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -4249,7 +4249,7 @@ func (ec *executionContext) unmarshalOTodosConditionUser2ᚖgithubᚗcomᚋenisd
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalOTodosConditionUserStatus2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUserStatus(ctx context.Context, v any) (*model.TodosConditionUserStatus, error) {
+func (ec *executionContext) unmarshalOTodosConditionUserStatus2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUserStatus(ctx context.Context, v any) (*model.TodosConditionUserStatus, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -4258,14 +4258,14 @@ func (ec *executionContext) unmarshalOTodosConditionUserStatus2ᚖgithubᚗcom�
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalOTodosConditionUserStatus2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUserStatus(ctx context.Context, sel ast.SelectionSet, v *model.TodosConditionUserStatus) graphql.Marshaler {
+func (ec *executionContext) marshalOTodosConditionUserStatus2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosConditionUserStatus(ctx context.Context, sel ast.SelectionSet, v *model.TodosConditionUserStatus) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return v
 }
 
-func (ec *executionContext) unmarshalOTodosSortBy2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosSortBy(ctx context.Context, v any) (*model.TodosSortBy, error) {
+func (ec *executionContext) unmarshalOTodosSortBy2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosSortBy(ctx context.Context, v any) (*model.TodosSortBy, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -4274,7 +4274,7 @@ func (ec *executionContext) unmarshalOTodosSortBy2ᚖgithubᚗcomᚋenisdenjoᚋ
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalOTodosSortBy2ᚖgithubᚗcomᚋenisdenjoᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosSortBy(ctx context.Context, sel ast.SelectionSet, v *model.TodosSortBy) graphql.Marshaler {
+func (ec *executionContext) marshalOTodosSortBy2ᚖgithubᚗcomᚋgraphqlᚑhiveᚋgoᚑgqlhiveᚋinternalᚋfixturesᚋtodosᚋgraphᚋmodelᚐTodosSortBy(ctx context.Context, sel ast.SelectionSet, v *model.TodosSortBy) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
